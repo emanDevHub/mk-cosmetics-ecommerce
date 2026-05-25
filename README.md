@@ -14,7 +14,8 @@ A modern and responsive cosmetics e-commerce website developed as an academic su
 1. HTML5  
 2. CSS3  
 3. JavaScript  
-4. Bootstrap  
+4. Bootstrap
+5. Java Script 
 
 ## Purpose
 This project was created for learning and educational purposes to improve front-end web development and website design skills.
