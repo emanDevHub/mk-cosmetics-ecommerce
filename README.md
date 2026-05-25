@@ -23,6 +23,7 @@ This project was created for learning and educational purposes to improve front-
 
 ### Home Page
 ![Home](https://github.com/user-attachments/assets/fdb3956c-1851-442f-a4ea-74b2008b0df4)
+![Header](https://github.com/user-attachments/assets/9a0422ae-f3cd-4f7e-8a63-552f612276ed)
 
 ### Product Page
 ![Product](https://github.com/user-attachments/assets/8997f5e0-d566-46c9-a55a-30c618c87ea3)
