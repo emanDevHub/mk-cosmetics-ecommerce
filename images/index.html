@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MK- Cosmetics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .card {
+      height: 100%;
+      transition: transform 0.2s;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .card:hover {
+      transform: scale(1.02);
+    }
+  
+    .card-img-top {
+      height: 250px;
+      object-fit: cover;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+  
+    .card-body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    footer {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+  
+  <link rel="icon" type="image/x-icon" href="fav.jpg">
+
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height: 80px;">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="logoo.webp" alt="Cosmetics Logo" height="50"></a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Deals</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html">🛒 Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+<!-- Full-Width, Large-Height Slider (2 Slides, No Space from Header) -->
+<div id="carouselExampleIndicators" class="carousel slide w-100" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <img src="slide3.webp" class="d-block w-100" alt="Slide 1" style="height: 600px; object-fit: cover;">
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <img src="slide2.webp" class="d-block w-100" alt="Slide 2" style="height: 600px; object-fit: cover;">
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+  
+  <!-- Main Content -->
+  <div class="container mt-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <!-- Product Card 1 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="image1.jfif" class="card-img-top" alt="Product">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h5 class="card-title">Brightening Face Serum<br>Price Rs.5000</h5>
+              <p class="card-text">Hydrogenated Didecene, Isododecane, Mica...</p>
+            </div>
+            <button class="btn btn-primary add-to-cart mt-3" data-name="Brightening Face Serum" data-price="5000">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="image2.webp" class="card-img-top" alt="Product">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h5 class="card-title">Liquid Lust Illuminator<br>Price Rs.6000</h5>
+              <p class="card-text">Hydrogenated Didecene, Mica, Polyisobutene...</p>
+            </div>
+            <button class="btn btn-primary add-to-cart mt-3" data-name="Liquid Lust Illuminator" data-price="6000">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="image3.jfif" class="card-img-top" alt="Product">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h5 class="card-title">All Care Toner Serum<br>Price Rs.1000</h5>
+              <p class="card-text">Soothes skin and refreshes. Removes irritants.</p>
+            </div>
+            <button class="btn btn-primary add-to-cart mt-3" data-name="All Care Toner Serum" data-price="1000">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 4 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="image4.webp" class="card-img-top" alt="Product">
+    <div class="card-body d-flex flex-column justify-content-between">
+      <div>
+        <h5 class="card-title">Matte Lipstick<br>Price Rs.2500</h5>
+        <p class="card-text">Long-lasting, rich color matte lipstick for all-day wear.</p>
+      </div>
+      <button class="btn btn-primary add-to-cart mt-3" data-name="Matte Lipstick" data-price="2500">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Product Card 5 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="image5.webp" class="card-img-top" alt="Product">
+    <div class="card-body d-flex flex-column justify-content-between">
+      <div>
+        <h5 class="card-title">Glow Face Mist<br>Price Rs.1800</h5>
+        <p class="card-text">Hydrates and refreshes skin for a radiant glow.</p>
+      </div>
+      <button class="btn btn-primary add-to-cart mt-3" data-name="Glow Face Mist" data-price="1800">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Product Card 6 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="image6.webp" class="card-img-top" alt="Product">
+    <div class="card-body d-flex flex-column justify-content-between">
+      <div>
+        <h5 class="card-title">Vitamin C Cleanser<br>Price Rs.3200</h5>
+        <p class="card-text">Gently cleanses and boosts skin clarity with Vitamin C.</p>
+      </div>
+      <button class="btn btn-primary add-to-cart mt-3" data-name="Vitamin C Cleanser" data-price="3200">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 MK-Cosmetics. All rights reserved.</p>
+  </footer>
+
+  <!-- Add to Cart Script -->
+  <script>
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', () => {
+        const name = button.getAttribute('data-name');
+        const price = parseInt(button.getAttribute('data-price'));
+
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        if (!cart.some(item => item.name === name)) {
+          cart.push({ name, price });
+          localStorage.setItem('cart', JSON.stringify(cart));
+        }
+
+        window.location.href = 'cart.html';
+      });
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
